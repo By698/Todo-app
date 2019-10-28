@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="theme.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>
+        <title>MyTODO</title>
+    </head>
+    <body>
+        <h1>My TODOS</h1>
+        <div>
+            <label for="search">Search</label>
+            <input id="search" type="text" onChange="updateTodos()" placeholder="Type Your search here...">
+        </div>
+        <table>
+            <thead>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Place</th>
+                <th>Due date</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="todoListView"></tbody>
+        </table>
+        <form action="">
+            <label for="title">Title</label>
+            <input id="title" type="text">
+            <label for="description">Description</label>
+            <input id="description" type="text">
+            <label for="place">Place</label>
+            <input id="place" type="text">
+            <label for="dueDate">Due date</label>
+            <input id="dueDate" type="text">
+            <button type="button" onClick="addTodo()">Submit</button>
+        </form>
+    </body>
+</html>
